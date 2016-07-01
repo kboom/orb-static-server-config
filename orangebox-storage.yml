@@ -9,4 +9,4 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
-#    instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}} # use this for testing multiple instances at a single host (in production it makes no sense though)
+    instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}} 

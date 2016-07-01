@@ -1,0 +1,12 @@
+server:
+  port: 5501
+
+eureka:
+  instance:
+    appname: orangebox-storage
+    hostname: localhost
+#    nonScurePort: 5501 # works with this one, it seems that when using no security it ignores the server port and uses this property
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+#    instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}} # use this for testing multiple instances at a single host (in production it makes no sense though)

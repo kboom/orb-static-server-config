@@ -5,7 +5,7 @@ eureka:
   instance:
     appname: orangebox-storage
     hostname: localhost
-#    nonScurePort: 5501 # works with this one, it seems that when using no security it ignores the server port and uses this property
+    nonSecurePort: 5501
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/

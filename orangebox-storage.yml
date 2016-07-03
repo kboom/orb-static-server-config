@@ -1,11 +1,11 @@
 server:
-  port: 5501
+  port: ${host.instance.port:8080}
 
 eureka:
   instance:
     appname: orangebox-storage
-    hostname: localhost
-    nonSecurePort: 5501
+    hostname: ${host.instance.name:localhost}
+    nonSecurePort: ${host.instance.port:8080}
     metadataMap:
         instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}} 
 

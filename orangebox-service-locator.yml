@@ -1,10 +1,10 @@
 server:
-  port: ${host.instance.port:8761}
+  port: 8761
 
 eureka:
   instance:
     appname: orangebox-service-locator
-    hostname: ${host.instance.name:localhost}
+    hostname: ${HOSTNAME:localhost}
   client:
     registerWithEureka: false
     fetchRegistry: false

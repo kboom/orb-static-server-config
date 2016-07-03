@@ -1,11 +1,13 @@
+# use host.instance.name and host.instance.port for heroku profile
+
 server:
-  port: ${host.instance.port:8080}
+  port: 8080
 
 eureka:
   instance:
     appname: orangebox-storage
-    hostname: ${host.instance.name:localhost}
-    nonSecurePort: ${host.instance.port:8080}
+    hostname: ${HOSTNAME:localhost}
+    nonSecurePort: 8080
     metadataMap:
         instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}} 
 

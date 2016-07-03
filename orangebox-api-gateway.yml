@@ -1,5 +1,5 @@
 server:
-  port: 5000
+  port: ${host.instance.port:8080}
 
 zuul:
   ignoredServices: '*'
@@ -12,6 +12,8 @@ eureka:
     serviceUrl:
       defaultZone: ${ORANGEBOX_SERVICE_LOCATOR_SERVER_URI:http://localhost:8761/eureka/}
   instance:
-    hostname: localhost
+    appname: orangebox-api-gateway
+    hostname: ${host.instance.name:localhost}
+    nonSecurePort: ${host.instance.port:8080}
     metadataMap:
       instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}

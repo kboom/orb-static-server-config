@@ -5,8 +5,6 @@ eureka:
   instance:
     appname: orangebox-service-locator
     hostname: ${HOSTNAME:localhost}
-    leaseRenewalIntervalInSeconds: 3
-    leaseExpirationDurationInSeconds: 5
   client:
     registerWithEureka: false
     fetchRegistry: false

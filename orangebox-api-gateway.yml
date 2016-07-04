@@ -6,7 +6,7 @@ zuul:
   routes:
     orangebox-storage:
       path: /storage/**
-      serviceId: ORANGEBOX-STORAGE
+      serviceId: orangeboxStorage
 
 eureka:
   client:

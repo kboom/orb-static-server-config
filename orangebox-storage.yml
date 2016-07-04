@@ -5,7 +5,7 @@ server:
 
 eureka:
   instance:
-    appname: orangebox-storage
+    appname: orangeboxStorage
     hostname: ${HOSTNAME:localhost}
     nonSecurePort: 8080
     metadataMap:

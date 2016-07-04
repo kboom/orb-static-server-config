@@ -6,11 +6,9 @@ zuul:
   routes:
     orangebox-storage:
       path: /storage/**
-      serviceId: orangebox-api-gateway
+      serviceId: orangebox-storage
 
 eureka:
   client:
     serviceUrl:
       defaultZone: ${ORANGEBOX_SERVICE_LOCATOR_SERVER_URI:http://localhost:8761/eureka/}
-  instance:
-    appname: orangebox-api-gateway

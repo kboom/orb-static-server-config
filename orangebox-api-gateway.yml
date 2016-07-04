@@ -4,8 +4,9 @@ server:
 zuul:
   ignoredServices: '*'
   routes:
-    orangebox-storage: /storage/**
-    orangebox-trading: /trading/**
+    orangebox-storage:
+      path: /storage/**
+      serviceId: orangebox-storage
 
 eureka:
   client:

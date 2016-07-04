@@ -4,7 +4,8 @@ server:
   port: 8080
 
 eureka:
+  instance:
+    appname: orangebox-storage
   client:
     serviceUrl:
       defaultZone: ${ORANGEBOX_SERVICE_LOCATOR_SERVER_URI:http://localhost:8761/eureka/}
-    

@@ -1,0 +1,9 @@
+# use host.instance.name and host.instance.port for heroku profile
+
+server:
+  port: 8080
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${ORANGEBOX_SERVICE_LOCATOR_SERVER_URI:http://localhost:8761/eureka/}

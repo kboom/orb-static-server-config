@@ -10,5 +10,7 @@ zuul:
 
 eureka:
   client:
+    fetchRegistry: true
+    registerWithEureka: false
     serviceUrl:
       defaultZone: ${ORANGEBOX_SERVICE_LOCATOR_SERVER_URI:http://localhost:8761/eureka/}

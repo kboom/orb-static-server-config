@@ -6,11 +6,12 @@ zuul:
   routes:
     orangebox-storage:
       path: /storage/**
-      serviceId: orangebox-storage
+      serviceId: orb-storage
+    orangebox-trading:
+          path: /trading/**
+          serviceId: orb-trading
 
 eureka:
   client:
-    fetchRegistry: true
-    registerWithEureka: false
     serviceUrl:
       defaultZone: ${ORANGEBOX_SERVICE_LOCATOR_SERVER_URI:http://localhost:8761/eureka/}

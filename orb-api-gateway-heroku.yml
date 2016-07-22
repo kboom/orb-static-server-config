@@ -1,5 +1,5 @@
-spring:
-  profiles: heroku
+server:
+  port: ${PORT}
 eureka:
   instance:
     hostname: ${DOMAIN_NAME}

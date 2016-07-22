@@ -10,3 +10,10 @@ eureka:
     fetchRegistry: false
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+      
+---
+spring:
+  profiles: heroku
+eureka:
+  instance:
+    hostname: ${DOMAIN_NAME}

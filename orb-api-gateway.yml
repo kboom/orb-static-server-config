@@ -15,3 +15,11 @@ eureka:
   client:
     serviceUrl:
       defaultZone: ${ORANGEBOX_SERVICE_LOCATOR_SERVER_URI:http://localhost:8761/eureka/}
+      
+      
+---
+spring:
+  profiles: heroku
+eureka:
+  instance:
+    hostname: ${DOMAIN_NAME}

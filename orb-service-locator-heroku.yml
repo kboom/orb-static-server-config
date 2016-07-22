@@ -1,5 +1,4 @@
 eureka:
   instance:
-    hostname: ${DOMAIN_NAME}
-    nonSecurePort: 80
+    hostname: localhost
   password: ${USER_PASSWORD:password}

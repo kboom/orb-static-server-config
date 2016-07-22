@@ -1,19 +1,7 @@
-# use host.instance.name and host.instance.port for heroku profile
-
 server:
-  port: 8080
+  port: ${PORT:8080}
 
 eureka:
   client:
     serviceUrl:
-      defaultZone: ${ORANGEBOX_SERVICE_LOCATOR_SERVER_URI:http://localhost:8761/eureka/}
-      
----
-spring:
-  profiles: heroku
-eureka:
-  instance:
-    hostname: ${DOMAIN_NAME}
-  client:
-    serviceUrl:
-      defaultZone: orb-server-service-locator.herokuapp.com
+      defaultZone: ${SERVICE_LOCATOR_URI:http://localhost:8761/eureka/}

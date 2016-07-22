@@ -1,8 +1,3 @@
-server:
-  port: ${PORT}
 eureka:
   instance:
     hostname: ${DOMAIN_NAME}
-  client:
-    serviceUrl:
-      defaultZone: orb-server-service-locator.herokuapp.com

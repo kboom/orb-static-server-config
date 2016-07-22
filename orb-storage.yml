@@ -4,4 +4,4 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: ${ORB_SERVICE_LOCATOR_URI:http://localhost:8761/eureka/}
+      defaultZone: ${SERVICE_LOCATOR_URI:http://localhost:8761/eureka/}

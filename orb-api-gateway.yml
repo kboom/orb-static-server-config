@@ -15,5 +15,3 @@ zuul:
     orangebox-trading:
           path: /trading/**
           serviceId: orb-trading
-          
-test.x.y

@@ -1,5 +1,9 @@
 server:
   port: ${PORT:8761}
+  
+security:
+  user:
+    password: ${eureka.password}
 
 eureka:
   instance:
@@ -9,3 +13,4 @@ eureka:
     fetchRegistry: false
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+  password: ${EUREKA_USER_PASSWORD:password}

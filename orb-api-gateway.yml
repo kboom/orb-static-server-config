@@ -1,9 +1,11 @@
 server:
   port: ${PORT:8080}
 
+security:
+  user:
+    password: ${eureka.password}
+  
 eureka:
-  instance:
-    hostname: ${DOMAIN_NAME:localhost}
   client:
     serviceUrl:
       defaultZone: ${SERVICE_LOCATOR_URI:http://localhost:8761/eureka/}

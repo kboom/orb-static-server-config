@@ -2,6 +2,19 @@ spring:
   profiles:
     active: heroku
     include: postgres
+
+
+spring:
+  datasource:
+    driverClassName=org.postgresql.Driver
+    url=jdbc:postgresql://localhost:5432/teste?charSet=LATIN1
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: false
+    hibernate:
+      ddl-auto: create
+
+
 eureka:
   instance:
     hostname: ${DOMAIN_NAME}

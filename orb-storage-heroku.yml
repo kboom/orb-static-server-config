@@ -2,9 +2,6 @@ spring:
   profiles:
     active: heroku
     include: postgres
-
-
-spring:
   datasource:
     driverClassName: org.postgresql.Driver
     url: ${STORAGE_DB_URL}

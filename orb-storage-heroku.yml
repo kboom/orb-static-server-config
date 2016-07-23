@@ -1,3 +1,6 @@
+spring:
+  profiles:
+    include: postgres
 eureka:
   instance:
     hostname: ${DOMAIN_NAME}

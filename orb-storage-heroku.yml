@@ -1,5 +1,5 @@
 spring:
-  profiles:
+  profiles: heroku
     include: postgres
 eureka:
   instance:

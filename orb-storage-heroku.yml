@@ -1,8 +1,8 @@
 spring:
-  profiles: heroku
+  profiles:
+    active: heroku
     include: postgres
 eureka:
   instance:
     hostname: ${DOMAIN_NAME}
-    nonSecurePort: 80
   password: ${USER_PASSWORD:password}

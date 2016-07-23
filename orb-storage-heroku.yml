@@ -4,7 +4,8 @@ spring:
     include: postgres
   datasource:
     driverClassName: org.postgresql.Driver
-    url: ${STORAGE_DB_URL}
+    url: ${JDBC_DATABASE_URL}
+
   jpa:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     show-sql: false

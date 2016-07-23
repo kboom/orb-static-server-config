@@ -6,8 +6,8 @@ spring:
 
 spring:
   datasource:
-    driverClassName=org.postgresql.Driver
-    url=jdbc:postgresql://localhost:5432/teste?charSet=LATIN1
+    driverClassName: org.postgresql.Driver
+    url: ${STORAGE_DB_URL}
   jpa:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     show-sql: false
